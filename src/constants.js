@@ -8,7 +8,7 @@ import sassLogo from "./assets/tech_logo/sass.png";
 import reactjsLogo from "./assets/tech_logo/reactjs.png";
 import reduxLogo from "./assets/tech_logo/redux.png";
 import angularLogo from "./assets/tech_logo/angular.png";
-import jQueryLogo from "./assets/tech_logo/jquery.png";
+import jQueryLogo from "./assets/tech_logo/jquery.png"; //jquery
 import jQUILogo from "./assets/tech_logo/jqueryui.png";
 import materialuiLogo from "./assets/tech_logo/materialui.png";
 //back-end
