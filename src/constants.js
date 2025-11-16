@@ -41,8 +41,8 @@ import gaLogo from "./assets/tech_logo/google_analytics.png";
 import nitLogo from "./assets/company_logo/nit_logo.png"; // Naresh i Technologies
 import internLogo from "./assets/company_logo/internship_studio_logo.png"; // Internship Studio
 // Education Section Logo's
-import tatLogo from "./assets/education_logo/tat.png"; //Trident college
-import ghssLogo from "./assets/education_logo/ghss.png"; //Gokarnika school
+import tatLogo from "./assets/education_logo/trident.png"; //Trident college
+import ghssLogo from "./assets/education_logo/ghssclg.png"; //Gokarnika school
 import schlLogo from "./assets/education_logo/schl.png"; //Hatibari school
 
 // Work/Project Section Logo's
