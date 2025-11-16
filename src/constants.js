@@ -8,8 +8,8 @@ import sassLogo from "./assets/tech_logo/sass.png";
 import reactjsLogo from "./assets/tech_logo/reactjs.png";
 import reduxLogo from "./assets/tech_logo/redux.png";
 import angularLogo from "./assets/tech_logo/angular.png";
-import jQueryLogo from "./assets/tech_logo/jQuery.png";
-import jQUILogo from "./assets/tech_logo/jQuery-UI.png";
+import jQueryLogo from "./assets/tech_logo/jquery.png";
+import jQUILogo from "./assets/tech_logo/jquery-ui.png";
 import materialuiLogo from "./assets/tech_logo/materialui.png";
 //back-end
 import nodejsLogo from "./assets/tech_logo/nodejs.png";
@@ -41,8 +41,8 @@ import gaLogo from "./assets/tech_logo/google_analytics.png";
 import nitLogo from "./assets/company_logo/nit_logo.png"; // Naresh i Technologies
 import internLogo from "./assets/company_logo/internship_studio_logo.png"; // Internship Studio
 // Education Section Logo's
-import tatLogo from "./assets/education_logo/TAT.png"; //Trident college
-import ghssLogo from "./assets/education_logo/GHSS.png"; //Gokarnika school
+import tatLogo from "./assets/education_logo/tat.png"; //Trident college
+import ghssLogo from "./assets/education_logo/ghss.png"; //Gokarnika school
 import schlLogo from "./assets/education_logo/schl.png"; //Hatibari school
 
 // Work/Project Section Logo's
