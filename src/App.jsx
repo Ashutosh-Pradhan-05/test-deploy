@@ -11,7 +11,7 @@ import Certification from "./components/Certification/Certification";
 import BlurBlob from "./BlurBlob";
 function App() {
   return (
-    <div className="bg-[#050414">
+    <div className="bg-[#050414]">
       <BlurBlob
         position={{ top: "35%", left: "20%" }}
         size={{ width: "30%", height: "40%" }}
