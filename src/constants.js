@@ -60,7 +60,7 @@ import ocideveloper from "./assets/certification_logo/OCI-Developer.png"; //OCI 
 import ocifoundation from "./assets/certification_logo/OCI-Foundation.png"; //OCI Certified Foundation
 import wiprojava from "./assets/certification_logo/Wipro-TalentNext.png"; //Wipro Certified in Java
 import oraclelogo from "./assets/certification_logo/oracle.png"; //Oracle Logo
-import wiprologo from "./assets/certification_logo/wipro.png"; //Wipro Logo
+import wiprologo from "./assets/certification_logo/wiprologo.png"; //Wipro Logo
 import oracle from "./assets/certification_logo/oracle1.png"; //Oracle
 import wipro from "./assets/certification_logo/wipro1.png"; //Wipro
 
