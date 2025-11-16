@@ -46,7 +46,7 @@ import ghssLogo from "./assets/education_logo/GHSS.png"; //Gokarnika school
 import schlLogo from "./assets/education_logo/schl.png"; //Hatibari school
 
 // Work/Project Section Logo's
-import reactPortfolioLogo from "./assets/work_logo/reactportfolio.png"; // React Portfolio
+import reactPortfolioLogo from "./assets/work_logo/reactproject.png"; // React Portfolio
 import ecomLogo from "./assets/work_logo/ecom.png"; // E-Commerce Website
 import todoLogo from "./assets/work_logo/todo.png"; // To-Do List SPA
 import portfolioLogo from "./assets/work_logo/portfolio.png"; // Personal Portfolio Website
