@@ -54,7 +54,7 @@ const Work = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:shadow-purple-500/90 hover:-translate-y-2 transition-transform duration-300"
+            className="border border-white bg-radial from-[#050414] from-50% to-[#2c076c] backdrop-blur-md rounded-2xl shadow-lg overflow-hidden hover:shadow-purple-500/90 hover:-translate-y-2 transition-transform duration-500"
           >
             <div className="p-4" onClick={() => handleOpenModal(project)}>
               <img

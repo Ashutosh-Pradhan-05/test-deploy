@@ -1,29 +1,34 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
-import Tilt from 'react-parallax-tilt';
-import Typewriter from 'typewriter-effect';
-import profileImage from '../../assets/profile.jpg'
+import Tilt from "react-parallax-tilt";
+import Typewriter from "typewriter-effect";
+import profileImage from "../../assets/profile.jpg";
 const About = () => {
   return (
-    <section id='about' className="px-[6vw] md:px-[5vw] lg:px-[12vw] font-sans mt-16 md:mt-24 lg:mt-32">
+    <section
+      id="about"
+      className="px-[6vw] md:px-[5vw] lg:px-[12vw] font-sans mt-16 md:mt-24 lg:mt-32"
+    >
       <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-16 lg:gap-20">
         {/* left side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold  mb-2 leading-tight">Hi, I am</h1>
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold  mb-2 leading-tight text-amber-300">
+            Hi, I am
+          </h1>
           <motion.h2
             animate={{
-              backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
             }}
             transition={{
               duration: 1,
               repeat: Infinity,
-              ease: 'easeInOut',
+              ease: "easeInOut",
             }}
             className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-clip-text text-transparent bg-[length:200%_200%]"
             style={{
-              backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)',
-              backgroundSize: '200% 200%',
-              display: 'inline-block',
+              backgroundImage: "linear-gradient(to right, #fc466b, #3f5efb)",
+              backgroundSize: "200% 200%",
+              display: "inline-block",
             }}
           >
             Ashutosh Pradhan
@@ -35,16 +40,16 @@ const About = () => {
               onInit={(typewriter) => {
                 typewriter
                   .pauseFor(100) // Initial delay
-                  .typeString('MERN Stack Developer')
+                  .typeString("MERN Stack Developer")
                   .pauseFor(1000)
                   .deleteAll(15) // Delete speed = 15ms per character
-                  .typeString('Full Stack Developer')
+                  .typeString("Full Stack Developer")
                   .pauseFor(1000)
                   .deleteAll(15)
-                  .typeString('React Developer')
+                  .typeString("React Developer")
                   .pauseFor(1000)
                   .deleteAll(15)
-                  .typeString('Programmer')
+                  .typeString("Programmer")
                   .pauseFor(1000)
                   .deleteAll(15)
                   .start();
@@ -53,13 +58,21 @@ const About = () => {
                 delay: 100, // Typing speed = 100ms per char
                 loop: true,
                 cursor: '<span class="text-[#8245ec]">|</span>', // Custom cursor
-                wrapperClassName: 'inline',
+                wrapperClassName: "inline",
               }}
             />
           </h3>
           {/* About Me Paragraph */}
-          <p className="text-base text-justify sm:text-lg md:text-lg text-gray-600 mb-10 mt-4 leading-relaxed indent-14">Versatile and technically proficient Computer Science graduate with hands-on experience building responsive web applications using React.js, Node.js, Express.js, MongoDB, Tailwind CSS and Bootstrap. Skilled in full-stack development, RESTful API integration and modern JavaScript libraries and frameworks. Committed to delivering clean, maintainable code in Agile environments and collaborating effectively within engineering teams to build pixel-perfect, scalable, user-centric solutions.</p>
-
+          <p className="text-base text-justify sm:text-lg md:text-lg text-gray-600 mb-10 mt-4 leading-relaxed indent-14">
+            Versatile and technically proficient Computer Science graduate with
+            hands-on experience building responsive web applications using
+            React.js, Node.js, Express.js, MongoDB, Tailwind CSS and Bootstrap.
+            Skilled in full-stack development, RESTful API integration and
+            modern JavaScript libraries and frameworks. Committed to delivering
+            clean, maintainable code in Agile environments and collaborating
+            effectively within engineering teams to build pixel-perfect,
+            scalable, user-centric solutions.
+          </p>
         </div>
 
         {/* Right Side */}
@@ -82,12 +95,37 @@ const About = () => {
               {/* SVG filter defs (for convex/specular effect) */}
               <svg width="0" height="0" className="absolute">
                 <defs>
-                  <filter id="convexLens" x="-50%" y="-50%" width="200%" height="200%">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.3" result="blur" />
-                    <feSpecularLighting in="blur" surfaceScale="2" specularConstant="0.4" specularExponent="20" lightingColor="white" result="specOut">
+                  <filter
+                    id="convexLens"
+                    x="-50%"
+                    y="-50%"
+                    width="200%"
+                    height="200%"
+                  >
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation="0.3"
+                      result="blur"
+                    />
+                    <feSpecularLighting
+                      in="blur"
+                      surfaceScale="2"
+                      specularConstant="0.4"
+                      specularExponent="20"
+                      lightingColor="white"
+                      result="specOut"
+                    >
                       <fePointLight x="-200" y="-100" z="400" />
                     </feSpecularLighting>
-                    <feComposite in="specOut" in2="SourceGraphic" operator="arithmetic" k1="0" k2="1" k3="0" k4="0" />
+                    <feComposite
+                      in="specOut"
+                      in2="SourceGraphic"
+                      operator="arithmetic"
+                      k1="0"
+                      k2="1"
+                      k3="0"
+                      k4="0"
+                    />
                   </filter>
                 </defs>
               </svg>
@@ -99,7 +137,11 @@ const About = () => {
                 className="w-full h-full object-cover rounded-full transform-gpu"
                 initial={{ scale: 1 }}
                 animate={{ scale: [1, 1.1, 1] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 loading="lazy"
               />
 
@@ -114,7 +156,10 @@ const About = () => {
               </div>
 
               {/* Light refraction layer */}
-              <div aria-hidden="true" className="absolute inset-0 rounded-full lens-filter-layer" />
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 rounded-full lens-filter-layer"
+              />
             </div>
           </Tilt>
 
@@ -142,11 +187,9 @@ const About = () => {
               CONTACT ME
             </a>
           </div>
-
-
         </div>
       </div>
     </section>
-  )
-}
-export default About  
+  );
+};
+export default About;

@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 import { education } from "../../constants";
 import { GiMedallist } from "react-icons/gi";
 import { FaSchoolFlag } from "react-icons/fa6";
@@ -18,21 +18,24 @@ const Education = () => {
         {/* <div className="w-72 h-3 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] mx-auto mt-2"></div> */}
         <motion.div
           animate={{
-            backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+            backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
           }}
           transition={{
             duration: 1,
             repeat: Infinity,
-            ease: 'easeInOut',
+            ease: "easeInOut",
           }}
           className="w-72 h-3 mx-auto mt-2 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-[length:200%_200%]"
           style={{
-            backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)',
-            backgroundSize: '200% 200%',
-            backgroundRepeat: 'no-repeat',
+            backgroundImage: "linear-gradient(to right, #fc466b, #3f5efb)",
+            backgroundSize: "200% 200%",
+            backgroundRepeat: "no-repeat",
           }}
         />
-        <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">An overview of my academic background, reflecting a continuous journey of learning, growth, and intellectual development.</p>
+        <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">
+          An overview of my academic background, reflecting a continuous journey
+          of learning, growth, and intellectual development.
+        </p>
       </div>
 
       {/* Education Timeline */}
@@ -44,8 +47,9 @@ const Education = () => {
         {education.map((edu, index) => (
           <div
             key={edu.id}
-            className={`flex flex-col sm:flex-row items-center mb-16 ${index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
-              }`}
+            className={`flex flex-col sm:flex-row items-center mb-16 ${
+              index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
+            }`}
           >
             {/* Timeline Circle */}
             <div className="absolute left-4 md:hidden transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 rounded-full flex justify-center items-center z-10">
@@ -57,7 +61,11 @@ const Education = () => {
             </div>
 
             {/* Content Section */}
-            <div className={`w-full sm:max-w-md p-4 sm:p-6 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.7)]  ${index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"} sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}>
+            <div
+              className={`w-full sm:max-w-md p-4 sm:p-6 rounded-2xl border border-white bg-radial from-[#050414] from-50% to-[#2c076c] backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.7)]  ${
+                index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
+              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
+            >
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-1 md:space-x-3">
                 {/* Academy Logo/Image */}
@@ -97,13 +105,14 @@ const Education = () => {
               </div>
 
               {/* Description */}
-              <p className="mt-2 text-gray-400 text-sm text-justify indent-10">{edu.desc}</p>
+              <p className="mt-2 text-gray-400 text-sm text-justify indent-10">
+                {edu.desc}
+              </p>
             </div>
-
           </div>
         ))}
       </div>
     </section>
-  )
-}
-export default Education
+  );
+};
+export default Education;

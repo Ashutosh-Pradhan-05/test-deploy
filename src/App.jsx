@@ -9,6 +9,7 @@ import Skills from "./components/Skills/Skills";
 import Work from "./components/Work/Work";
 import Certification from "./components/Certification/Certification";
 import BlurBlob from "./BlurBlob";
+// import TechStackSphere from "./components/Techsphere/techstacksphere";
 function App() {
   return (
     <div className="bg-[#050414]">
@@ -20,6 +21,7 @@ function App() {
       <div className="relative pt-20">
         <Navbar />
         <About />
+        {/* <TechStackSphere /> */}
         <Skills />
         <Experience />
         <Work />
